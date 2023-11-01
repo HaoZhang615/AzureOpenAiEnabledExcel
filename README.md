@@ -5,8 +5,8 @@ This repo is about adding a custom function in Excel file to enable API call to 
 
 ## prerequrisites:
 1. Access to an Azure OpenAI Service instance as well as its API endpoint and API key
-2. Authorization in your organization to enable developer capabilities in Excel.
-3. Download the Excel file to your local machine [AzureOpenAI enabled Excel.xlsm]
+2. Authorization in your organization to enable developer capabilities and use macros in Excel.
+3. Download the Excel file to your local machine [AzureOpenAI enabled Excel.xlsx]
 
 ## How To
 
@@ -22,7 +22,7 @@ This repo is about adding a custom function in Excel file to enable API call to 
    - In Excel's VBA editor, import the JsonConverter.bas file as a module
    ![importJsonConverterModule](images/importJsonConverterModule.png)
    ![finalState](images/finalStateOfImportedJsonConverterModule.png)
-3. Insert a new module and paste the code below (optional step if you started with a blank Excel file instead of using the one provided in this repo)
+3. Insert a new module and paste the code below:
 
 ![insertNewModule](images/insertNewModuleForCustomFunction.png)
 
@@ -75,7 +75,7 @@ End If
 End Function
 ```
 ![pasteCode](images/pasteCodeOfFunctionDefinition.png)
-4. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters" (optional step if you started with a blank Excel file instead of using the one provided in this repo):
+4. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters":
 
 ![renameTab](images/renameCurrentSheet.png)
 5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
