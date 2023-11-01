@@ -14,9 +14,11 @@ This repo is about adding a custom function in Excel file to enable API call to 
 ![enableDeveloperTab](images/enableDeveloperTab.png)
 
 2. Open VBA editor and add 2 references into the VBAProject "Tools":
- ![access VBA editor](images/accessVBAeditor.png)
+![access VBA editor](images/accessVBAeditor.png)
+
 - Microsoft XML, v6.0
 - Microsoft Scripting Runtime
+
 ![goToToolsReferences](images/addToolReference1.png)
 ![Alt text](images/addToolReference2.png)
 2. Add the JsonConverter module to be able to parse the JSON response from the Azure OpenAI API:
