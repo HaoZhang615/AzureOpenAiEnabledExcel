@@ -5,8 +5,10 @@ This repo is about adding a custom function in Excel file to enable API call to 
 1. Access to an Azure OpenAI Service instance as well as its API endpoint and API key
 2. Authorization in your organization to enable developer capabilities in Excel.
 
-Code for your VBA module creation:
+## Code for your VBA module creation:
+
 ########### copy from here to the end #########################
+
 Function AOAIGPT(userPrompt As String) As String
 
 Dim apiKey As String
