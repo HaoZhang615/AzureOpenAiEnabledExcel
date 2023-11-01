@@ -1,25 +1,31 @@
 # Azure OpenAI Enabled Excel
-This repo is about adding a custom function in Excel file to enable API call to Azure OpenAI Service. 
+
+## :loudspeaker: Introduction
+This repo is about adding a custom function in Excel file to enable API call to Azure OpenAI Service, providing the user a secured channel of leveraging the power of the advanced OpenAI models in their Excel data, without worring about the data being used to retrain the model. 
 
 ## prerequrisites:
 1. Access to an Azure OpenAI Service instance as well as its API endpoint and API key
 2. Authorization in your organization to enable developer capabilities in Excel.
+3. Download the Excel file to your local machine [AzureOpenAI enabled Excel.xlsm]
 
 ## How To
 
-1. Enable the “developer” menu. This can be done in File → Options → Customize Ribbon:
-
+1. Open the Excel file you downloaded and enable the “developer” menu. This can be done in File → Options → Customize Ribbon:
+![enableDeveloperTab](images/enableDeveloperTab.png)
 2. Add the JsonConverter module to be able to parse the JSON response from the Azure OpenAI API:
-   - Go to (https://github.com/VBA-tools/VBA-JSON/releases) and download the latest zip file version
+   - Go to https://github.com/VBA-tools/VBA-JSON/releases and download the latest zip file version
+   ![downloadJsonConverter](images/downloadJsonConverterZipFile.png)
    - Extract the file
+   ![ExtractJsonConverter](images/locateJsonConverterZipFile.png)
+   - Go to VBA editor under the Developer Tab:
+   ![access VBA editor](images/accessVBAeditor.png)
    - In Excel's VBA editor, import the JsonConverter.bas file as a module
-3. Insert a new module and paste the code below
-4. Rename the current worksheet as "Parameters" and fill in the parameter names as follows:
-5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
-## Code for your VBA module creation:
+   ![importJsonConverterModule](images/importJsonConverterModule.png)
+   ![finalState](images/finalStateOfImportedJsonConverterModule.png)
+3. Insert a new module and paste the code below (optional step if you started with a blank Excel file instead of using the one provided in this repo)
+![insertNewModule](images/insertNewModuleForCustomFunction.png)
 
-########### copy from here to the end #########################
-
+```VBA
 Function AOAIGPT(userPrompt As String) As String
 
 Dim apiKey As String
@@ -66,3 +72,12 @@ Else
 End If
 
 End Function
+```
+![pasteCode](images/pasteCodeOfFunctionDefinition.png)
+4. Fill in the parameter names and their values as follows and rename the current worksheet as "Parameters" :
+![renameTab](images/renameCurrentSheet.png)
+5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
+![testAPI](images/testAPICall.png)
+
+
+
