@@ -12,6 +12,13 @@ This repo is about adding a custom function in Excel file to enable API call to 
 
 1. Open the Excel file you downloaded and enable the “developer” menu. This can be done in File → Options → Customize Ribbon:
 ![enableDeveloperTab](images/enableDeveloperTab.png)
+
+2. Open VBA editor and add 2 references intot the VBAProject "Tools":
+
+- Microsoft XML, v6.0
+- Microsoft Scripting Runtime
+![goToToolsReferences](images/addToolReference1.png)
+![Alt text](images/addToolReference2.png)
 2. Add the JsonConverter module to be able to parse the JSON response from the Azure OpenAI API:
    - Go to https://github.com/VBA-tools/VBA-JSON/releases and download the latest zip file version
    ![downloadJsonConverter](images/downloadJsonConverterZipFile.png)
@@ -21,12 +28,14 @@ This repo is about adding a custom function in Excel file to enable API call to 
    ![access VBA editor](images/accessVBAeditor.png)
    - In Excel's VBA editor, import the JsonConverter.bas file as a module
    ![importJsonConverterModule](images/importJsonConverterModule.png)
+   ![importJsonConverterModule2](images/importJsonConverterModule2.png)
    ![finalState](images/finalStateOfImportedJsonConverterModule.png)
-3. Insert a new module and paste the code below:
+3. Insert a new module and paste the code below to create the function **AOAIGPT**:
 
 ![insertNewModule](images/insertNewModuleForCustomFunction.png)
 
 ```VBA
+' This function takes one string input as the user prompt
 Function AOAIGPT(userPrompt As String) As String
 
 Dim apiKey As String
