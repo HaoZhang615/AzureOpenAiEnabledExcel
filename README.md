@@ -3,6 +3,8 @@
 ## :loudspeaker: Introduction
 This repo is about adding a custom function in Excel file to enable API call to Azure OpenAI Service, providing the user a secured channel of leveraging the power of the advanced OpenAI models in their Excel data, without worrying about the data being used to retrain the model. 
 
+Youtube Video: https://www.youtube.com/watch?v=9fCIFtuxYNI
+
 ## prerequrisites:
 1. Access to an Azure OpenAI Service instance as well as its API endpoint and API key
 2. Authorization in your organization to enable developer capabilities and use macros in Excel.
