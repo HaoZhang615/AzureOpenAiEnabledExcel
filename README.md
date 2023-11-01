@@ -13,8 +13,8 @@ This repo is about adding a custom function in Excel file to enable API call to 
 1. Open the Excel file you downloaded and enable the “developer” menu. This can be done in File → Options → Customize Ribbon:
 ![enableDeveloperTab](images/enableDeveloperTab.png)
 
-2. Open VBA editor and add 2 references intot the VBAProject "Tools":
-
+2. Open VBA editor and add 2 references into the VBAProject "Tools":
+ ![access VBA editor](images/accessVBAeditor.png)
 - Microsoft XML, v6.0
 - Microsoft Scripting Runtime
 ![goToToolsReferences](images/addToolReference1.png)
@@ -24,8 +24,6 @@ This repo is about adding a custom function in Excel file to enable API call to 
    ![downloadJsonConverter](images/downloadJsonConverterZipFile.png)
    - Extract the file
    ![ExtractJsonConverter](images/locateJsonConverterZipFile.png)
-   - Go to VBA editor under the Developer Tab:
-   ![access VBA editor](images/accessVBAeditor.png)
    - In Excel's VBA editor, import the JsonConverter.bas file as a module
    ![importJsonConverterModule](images/importJsonConverterModule.png)
    ![importJsonConverterModule2](images/importJsonConverterModule2.png)
