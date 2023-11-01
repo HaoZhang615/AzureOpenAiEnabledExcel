@@ -76,6 +76,7 @@ End Function
 ```
 ![pasteCode](images/pasteCodeOfFunctionDefinition.png)
 4. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters" (optional step if you started with a blank Excel file instead of using the one provided in this repo):
+
 ![renameTab](images/renameCurrentSheet.png)
 5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
 ![testAPI](images/testAPICall.png)
