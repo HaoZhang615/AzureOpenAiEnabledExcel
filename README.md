@@ -21,7 +21,8 @@ This repo is about adding a custom function in Excel file to enable API call to 
 
 ![goToToolsReferences](images/addToolReference1.png)
 ![Alt text](images/addToolReference2.png)
-2. Add the JsonConverter module to be able to parse the JSON response from the Azure OpenAI API:
+
+3. Add the JsonConverter module to be able to parse the JSON response from the Azure OpenAI API:
    - Go to https://github.com/VBA-tools/VBA-JSON/releases and download the latest zip file version
    ![downloadJsonConverter](images/downloadJsonConverterZipFile.png)
    - Extract the file
@@ -30,7 +31,8 @@ This repo is about adding a custom function in Excel file to enable API call to 
    ![importJsonConverterModule](images/importJsonConverterModule.png)
    ![importJsonConverterModule2](images/importJsonConverterModule2.png)
    ![finalState](images/finalStateOfImportedJsonConverterModule.png)
-3. Insert a new module and paste the code below to create the function **AOAIGPT**:
+
+4. Insert a new module and paste the code below to create the function **AOAIGPT**:
 
 ![insertNewModule](images/insertNewModuleForCustomFunction.png)
 
@@ -84,10 +86,12 @@ End If
 End Function
 ```
 ![pasteCode](images/pasteCodeOfFunctionDefinition.png)
-4. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters":
+
+5. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters":
 
 ![renameTab](images/renameCurrentSheet.png)
-5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
+
+6. Test the new function "AOAIGPT" which accept any cell value as prompt. 
 ![testAPI](images/testAPICall.png)
 
 
