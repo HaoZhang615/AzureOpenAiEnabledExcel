@@ -23,6 +23,7 @@ This repo is about adding a custom function in Excel file to enable API call to 
    ![importJsonConverterModule](images/importJsonConverterModule.png)
    ![finalState](images/finalStateOfImportedJsonConverterModule.png)
 3. Insert a new module and paste the code below (optional step if you started with a blank Excel file instead of using the one provided in this repo)
+
 ![insertNewModule](images/insertNewModuleForCustomFunction.png)
 
 ```VBA
@@ -74,7 +75,7 @@ End If
 End Function
 ```
 ![pasteCode](images/pasteCodeOfFunctionDefinition.png)
-4. Fill in the parameter names and their values as follows and rename the current worksheet as "Parameters" :
+4. Fill in the parameter names and their values as follows with the exact same cell positions and rename the current worksheet as "Parameters" (optional step if you started with a blank Excel file instead of using the one provided in this repo):
 ![renameTab](images/renameCurrentSheet.png)
 5. Test the new function "AOAIGPT" which accept any cell value as prompt. 
 ![testAPI](images/testAPICall.png)
